@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleEN.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
+    <title>Galić Law Office - Home</title>
+</head>
+<body>
+    
+       
+    <div class="topnav" id="myTopnav">
+        <div class="all">
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+          <a href="javascript:void(0);" class="iconX" onclick="myFunction()">
+              <i class="fa fa-times"></i>
+          </a>
+          <a href="indexEn.html" class="logo2"><img src="img/logo1.png" class="logo1"> </a>
+          
+          <a href="indexEn.html"><img src="img/logo1.png" class="logo"> </a>
+          <div class="dropdown1">
+            <button class="dropbtn">EN 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">SR</a>
+              <a href="indexRU.html">RU</a>
+            </div>
+          </div>
+        </div>
+          <div class="nav">
+              
+              <a class="active" href="indexEn.html">Home</a>
+              <a href="aboutEN.html">About us</a>
+              <a href="servicesEN.html">Practice</a>
+              <a href="articles.html">Articles</a>
+              <a href="contactEN.html">Contact</a>
+              <div class="dropdown">
+                <button class="dropbtn">EN 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="index.html">SR</a>
+                  <a href="indexRU.html">RU</a>
+                </div>
+              </div>
+          </div>
+          
+          
+      </div>
+    
+        <div class="text">
+            <h1 class="text1">Knowledge.</h1>
+            <h1 class="text1">Experience.</h1>
+            <h1 class="text1">Success.</h1>
+        </div>
+
+        <p class="ml3">Galić Law provides comprehensive legal services to clients coming from various industries, with a particular emphasis on the regions of Serbia, Montenegro, as well as Bosnia and Herzegovina.</p>
+
+
+
+    <div class="textResp">
+        <h1 class="text1">Knowledge.</h1>
+            <h1 class="text1">Experience.</h1>
+            <h1 class="text1">Success.</h1>
+    </div>
+    
+    <p class="ml3Resp">Galić Law provides comprehensive legal services to clients coming from various industries, with a particular emphasis on the regions of Serbia, Montenegro, as well as Bosnia and Herzegovina.</p>
+
+  
+    <script>
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml3 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 1250,
+            delay: (el, i) => 50 * (i+1)
+        }).add({
+            targets: '.ml3',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 5000
+        });
+
+
+        var textWrapper = document.querySelector('.ml3Resp');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml3Resp .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 1250,
+            delay: (el, i) => 50 * (i+1)
+        }).add({
+            targets: '.ml3Resp',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 5000
+        });
+    </script>
+
+    <!--Hamburger menu-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            } 
+        }
+    </script>
+ 
+
+</body>
+</html>
