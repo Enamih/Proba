@@ -424,22 +424,26 @@ display: none;
        
     }
     .artimg{
-      width: 70%;
-      margin-left: 15%;
+      width: 80%;
+      margin-left: 5%;
       margin-top: 5%;
     }
     .artlist{
         width: 80%;
         margin: 5% 10%;
     }
-    .artlist ul{
-        width: 90%;
+    .artlist {
+        width: 100%;
         margin-left: -5%;
     }
 
-    .artlist ul li a{
+    .artlist a{
+      width:60%;
         font-size: 100%;
+        margin-top: 5%;
+        margin-left: 2%;
         padding-right: 5%;
+        padding-left: 5%;
     }
     .title{
       display: block;
@@ -545,6 +549,10 @@ display: none;
   .topnav.responsive .dropdown1 .dropdown-content{
       margin-left: 1%;
       background-color: rgba(23, 43, 112, 0.7);
+  }
+  #footer{
+    position: relative;
+    bottom: 0;
   }
   .left, .centerDiv, .right{
     width: 100%;
