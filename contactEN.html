@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="contact.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
@@ -25,9 +25,9 @@
       <a href="javascript:void(0);" class="iconX" onclick="myFunction()">
           <i class="fa fa-times"></i>
       </a>
-      <a href="indexEn.html" class="logo2"><img src="img/logo1.png" class="logo1"> </a>
+      <a href="indexEn.html" class="logo2"><img src="img/logo1.png" class="logo1" alt="logo"> </a>
       
-      <a href="indexEn.html"><img src="img/logo1.png" class="logo"> </a>
+      <a href="indexEn.html"><img src="img/logo1.png" class="logo" alt="logo"> </a>
       <div class="dropdown1">
         <button class="dropbtn">EN 
           <i class="fa fa-caret-down"></i>
@@ -69,53 +69,23 @@
         <table>
             <tr>
                 <td class="loc">
-                    <img src="img/location.png" class="location">
+                    <img src="img/location.png" class="location" alt="icon">
                     <p class="address">Kneza Mihaila 30/V, Belgrade, Serbia</p>
                 </td>
                 <td>
-                    <img src="img/telephone-call.png" class="location">
-                    <p><a href="tel:+381 64 25 77 852">+381 64 25 77 852</a></p>
+                    <img src="img/telephone-call.png" class="location" alt="icon">
+                    <p><a href="tel:+381642577852">+381 64 25 77 852</a></p>
                 </td>
                 <td>
-                    <img src="img/email.png" class="location">
+                    <img src="img/email.png" class="location" alt="icon">
                     <p><a href="mailto:office@galic.rs">office@galic.rs</a></p>
                 </td>
             </tr>
         </table>
     </div>
 
-    <!--
-    <form action="mailto:office@galic.rs" method="post" enctype="text/plain" class="form">
-        <div class="name">
-            <div class="col-25">
-                <label for="name">Ime i prezime</label>
-            </div>
-            <div class="col-75">
-                <input type="text" id="email"  name="Name-Last name" placeholder="Ime i prezime">
-            </div>
-        </div>
-        <div class="name">
-            <div class="col-25">
-              <label for="name">Email</label>
-            </div>
-            <div class="col-75">
-                <input type="text" id="email1"  name="Email" placeholder="Email">
-            </div>
-        </div>
-        <div class="name">
-          <div class="col-25">
-            <label for="name">Poruka</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="message"  name="Message" placeholder="Poruka">
-          </div>
-          </div>
-        <div class="button">
-            <input type="submit" value="Pošalji" class="btn"> 
-            <input type="reset" value="Resetuj" class="btn">
-        </div>
-    </form>
-    -->
+  
+   
     <div class="container">
       <form action="mailto:office@galic.rs">
         <div class="row">
@@ -153,23 +123,23 @@
 <hr class="line1">
 <footer id="footer">
   <div class="dmn-adresa">
-          <p>
+          
             <div class="left">
-              <h3>Address</h3>
+              <h3>Address:</h3>
               Kneza Mihaila 30/V<br>
             Belgrade, 11000<br>
-            Serbia <br>
+            Republic of Serbia <br>
           </div>
           <div class="centerDiv">
-            <h3>Phone:</h3> +381 64 25 77 852<br>
-            <h3>Email:</h3> office@galic.rs<br>
+            <h3>Phone:</h3> <a href="tel:+381642577852">+381 64 25 77 852</a><br>
+            <h3>Email:</h3>  <a href="mailto:office@galic.rs">office@galic.rs</a><br>
           </div>
           <div class="right1">
-            <div><a href="index.html"><img src="img/social/facebook.png" class="social-media"></a></div>
-            <div><a href="about.html"><img src="img/social/instagram.png" class="social-media"></a></div>
-            <div><a href="contact.html"><img src="img/social/linkedin.png" class="social-media"></a></div>
+            <div><a href="https://www.facebook.com/GalicLaw/"><img src="img/social/facebook.png" class="social-media" alt="fb"></a></div>
+            <div><a href="https://www.instagram.com/advokatska_kancelarija_galic/"><img src="img/social/instagram.png" class="social-media" alt="instagram"></a></div>
+            <div><a href="https://www.linkedin.com/company/gali%C4%87-law/about/"><img src="img/social/linkedin.png" class="social-media" alt="in"></a></div>
           </div>
-          </p>
+          
     </div>
     <hr>
   <div class="container1">
@@ -179,21 +149,7 @@
   </div>
 </footer>
 
+<script src="contact.js"></script>
 
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-  
-    }
-    
-  }
-  
-  
-  
-  </script>
 </body>
 </html>
